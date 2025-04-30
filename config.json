@@ -1,0 +1,39 @@
+{
+  "profile": {
+    "name": "Matt Cromwell",
+    "tagline": "Helping WordPress professionals build better businesses",
+    "gravatarEmail": "matt@wpproducttalk.com",
+    "bio": "I'm Matt Cromwell — a WordPress product entrepreneur, Senior Director of Customer Experience at StellarWP, and co-founder of GiveWP. I lead teams, build brands, and design customer-first experiences that scale. I also host WP Product Talk, a podcast focused on helping WordPress product owners grow with confidence. I'm passionate about 3rd wave coffee, piano, disc golf, and faith-centered leadership."
+  },
+  "social": {
+    "x": "https://x.com/learnwithmattc",
+    "linkedin": "https://linkedin.com/in/mattcromwell",
+    "email": "info@mattcromwell.com"
+  },
+  "links": [
+    {
+      "title": "WP Product Talk Podcast",
+      "url": "#"
+    },
+    {
+      "title": "StellarWP",
+      "url": "#"
+    },
+    {
+      "title": "My Writing",
+      "url": "#"
+    },
+    {
+      "title": "Contact Me",
+      "url": "#"
+    }
+  ],
+  "blog": {
+    "rssFeed": "https://www.mattcromwell.com/feed/",
+    "wordCount": 40
+  },
+  "support": {
+    "buttonText": "Buy Me a Coffee ☕️",
+    "url": "#"
+  }
+} 
