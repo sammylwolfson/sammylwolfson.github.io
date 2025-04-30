@@ -13,19 +13,19 @@
   "links": [
     {
       "title": "WP Product Talk Podcast",
-      "url": "#"
+      "url": "https://wpproducttalk.com"
     },
     {
       "title": "StellarWP",
-      "url": "#"
+      "url": "https://stellarwp.com"
     },
     {
       "title": "My Writing",
-      "url": "#"
+      "url": "https://mattcromwell.com"
     },
     {
       "title": "Contact Me",
-      "url": "#"
+      "url": "https://mattcromwell.com/contact"
     }
   ],
   "blog": {
@@ -34,6 +34,6 @@
   },
   "support": {
     "buttonText": "Buy Me a Coffee ☕️",
-    "url": "#"
+    "url": "https://www.buymeacoffee.com/mattcromwell"
   }
 } 
