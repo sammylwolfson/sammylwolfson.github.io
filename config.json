@@ -8,7 +8,10 @@
   "social": {
     "x": "https://x.com/learnwithmattc",
     "linkedin": "https://linkedin.com/in/mattcromwell",
-    "email": "info@mattcromwell.com"
+    "email": "info@mattcromwell.com",
+    "wordpress": "https://profiles.wordpress.org/webdevmattcrom/",
+    "github": "https://github.com/mathetos/",
+    "bluesky": "https://bsky.app/profile/mattcromwell.bsky.social"
   },
   "links": [
     {
@@ -35,5 +38,6 @@
   "support": {
     "buttonText": "Buy Me a Coffee ☕️",
     "url": "https://www.buymeacoffee.com/mattcromwell"
-  }
+  },
+  "theme": "dark"
 } 
