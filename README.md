@@ -3,7 +3,7 @@
 Spin up a sleek "link-in-bio" page on **GitHub Pages** in minutes—no hosting bill, no complicated build chain.  
 Perfect for product owners, devs, and anyone in WP-land who wants a home base that just works.
 
-![Screenshot of my live site](screenshot.png)
+![Screenshot of my live site](screenshot-bright.png)
 
 ---
 
@@ -57,17 +57,21 @@ That's it—high-five! 🎉
 
 ---
 
-## Make it yours
+## Theme Switcher – Make it yours
 
-* **Switching themes** – Themes are now loaded dynamically based on a URL query parameter. To preview or share your site with a different theme, just add `?theme=bulky`, `?theme=kubrik`, `?theme=bright`, or `?theme=dark` to your URL, for example:
+The `core.css` file simply holds the minimum layout styles and generally speaking doesn't need to change. 
+
+The theme stylesheets are loaded dynamically via javascript. To set your default theme, simply define it in the `config.json` file; e.g. `"theme": "kubrik"` 
+
+The "Theme Switcher" allows you to preview any theme via a query parameter in your url. Just append `?theme=bulky` to your url to see whichever theme you want. 
+
+* **Switching themes** – Themes can be previewed dynamically based on a URL query parameter. To preview or share your site with a different theme, just add `?theme=bulky`, `?theme=kubrik`, `?theme=bright`, `?theme=dark`, or `?theme=minimal` to your URL, for example:
   
   `https://<username>.github.io/?theme=bulky`
   
-  If no `theme` parameter is present, or if the value is invalid, the **dark** theme will be loaded by default.
+  If no `theme` parameter is present, or if the value is invalid, the **minimal** theme will be loaded by default.
   
   To add a new theme, simply create a new CSS file in the `styles/` folder and add its name to the theme list in `main.js`.
-
-* **Cache-busting** – The theme and core stylesheets are automatically cache-busted on every load, so you and your visitors always get the latest version after you update your theme file.
 
 * **Stylesheet tweaks** – Edit your theme file in the `styles/` folder for colors and effects, or edit `core.css` for layout tweaks.  
 * **HTML changes** – everything lives in `index.html`. Keep it minimal or go wild.  
@@ -75,17 +79,32 @@ That's it—high-five! 🎉
 
 ---
 
+## Available Themes
+
+
+| Theme   | Description | Main Colors | Screenshot |
+|---------|-------------|-------------|------------|
+| **bulky** | Large, bold, soft, and modern. Features pill-shaped buttons, thick borders, and a playful, accessible look. | ![#a18aff](https://via.placeholder.com/16/a18aff/000000?text=+) `#a18aff` (button), ![#6c4cff](https://via.placeholder.com/16/6c4cff/000000?text=+) `#6c4cff` (accent), ![#f5f2ef](https://via.placeholder.com/16/f5f2ef/000000?text=+) `#f5f2ef` (background), ![#18001a](https://via.placeholder.com/16/18001a/ffffff?text=+) `#18001a` (border) | ![Preview of Bulky theme](screenshot-bulky.png)|
+| **kubrik** | Inspired by classic WordPress themes. Clean, blue-accented, with soft gradients and subtle shadows. | ![#21759b](https://via.placeholder.com/16/21759b/ffffff?text=+) `#21759b` (blue), ![#60a6d2](https://via.placeholder.com/16/60a6d2/000000?text=+) `#60a6d2` (light blue), ![#e9e9e9](https://via.placeholder.com/16/e9e9e9/000000?text=+) `#e9e9e9` (background) | ![Preview of Kubrik theme](screenshot-kubrik.png)|
+| **bright** | Vivid, modern, and energetic. Uses a blue/yellow/purple gradient background and crisp white cards. | ![#1a73e8](https://via.placeholder.com/16/1a73e8/ffffff?text=+) `#1a73e8` (blue), ![#0d47a1](https://via.placeholder.com/16/0d47a1/ffffff?text=+) `#0d47a1` (hover), ![#ffffff](https://via.placeholder.com/16/ffffff/000000?text=+) `#ffffff` (background) | ![Preview of Bright theme](screenshot-bright.png) |
+| **dark** | High-contrast, accessible dark mode. Gold/yellow accents on a deep black background. | ![#FFD700](https://via.placeholder.com/16/FFD700/000000?text=+) `#FFD700` (gold), ![#202124](https://via.placeholder.com/16/202124/ffffff?text=+) `#202124` (text), ![#070708](https://via.placeholder.com/16/070708/ffffff?text=+) `#070708` (background) | ![Preview of Dark theme](screenshot-dark.png) |
+| **minimal** | Ultra-simple, clean, and neutral. | ![#2d3748](https://via.placeholder.com/16/2d3748/ffffff?text=+) `#2d3748` (text), ![#f7fafc](https://via.placeholder.com/16/f7fafc/000000?text=+) `#f7fafc` (background) | ![Preview of Minimal theme](screenshot-minimal.png) |
+
+> To add a screenshot, save a 1500×500px PNG as `screenshot-<theme>.png` in your repo root and update this table.
+
+---
+
 ## Contribute
 
-Have a fresh colourway or nifty improvement?  
-PRs that enhance the stylesheet or overall accessibility are always welcome.
+Have a fresh style or nifty improvement?  
+PRs that enhance the stylesheet, improve performance, add new themes, or overall accessibility are always welcome.
 
 ---
 
 ## Feedback
 
 Questions, ideas, or you just deployed your own?  
-Open an issue or ping me on X—love hearing how people use this.
+Open an issue or ping me on [X](https://x.com/learnwithmattc) — I'd love to see and share your Connect page with the world.
 
 ---
 

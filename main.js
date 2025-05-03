@@ -1,12 +1,25 @@
 // Theme selection and dynamic loading
-(function() {
-  const availableThemes = ['bulky', 'kubrik', 'bright', 'dark'];
+(async function() {
+  const availableThemes = ['bulky', 'kubrik', 'bright', 'dark', 'minimal'];
   const params = new URLSearchParams(window.location.search);
   let theme = params.get('theme');
+  
+  // If no theme in URL, try to get it from config.json
+  if (!theme) {
+    try {
+      const response = await fetch('config.json');
+      const config = await response.json();
+      theme = config.theme;
+    } catch (error) {
+      console.error('Error loading config.json:', error);
+    }
+  }
+  
   // Normalize and validate
   if (!theme || !availableThemes.includes(theme)) {
-    theme = 'dark';
+    theme = 'minimal'; // Fallback to minimal if config.json fails or theme is invalid
   }
+  
   const cacheBust = '?v=' + Math.random();
   // Remove any existing theme link
   const oldTheme = document.getElementById('theme-css');
