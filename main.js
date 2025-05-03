@@ -1,20 +1,20 @@
 // Theme selection and dynamic loading
 (function() {
-  // List your available themes here
   const availableThemes = ['bulky', 'kubrik', 'bright', 'dark'];
   const params = new URLSearchParams(window.location.search);
-  const theme = params.get('theme');
-  // Fallback to 'dark' if not present or invalid
-  const themeName = availableThemes.includes(theme) ? theme : 'dark';
-  // Cache-busting: use random
+  let theme = params.get('theme');
+  // Normalize and validate
+  if (!theme || !availableThemes.includes(theme)) {
+    theme = 'dark';
+  }
   const cacheBust = '?v=' + Math.random();
-  // Remove any existing theme link (if reloading)
+  // Remove any existing theme link
   const oldTheme = document.getElementById('theme-css');
   if (oldTheme) oldTheme.remove();
   // Create and append the new theme link
   const link = document.createElement('link');
   link.rel = 'stylesheet';
-  link.href = `styles/${themeName}.css${cacheBust}`;
+  link.href = `styles/${theme}.css${cacheBust}`;
   link.id = 'theme-css';
   document.head.appendChild(link);
 })();
@@ -36,6 +36,12 @@ async function initializeContent() {
 
     // Set page title
     document.title = config.profile.name;
+
+    // Set meta description dynamically
+    var metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute('content', config.profile.tagline || config.profile.bio || '');
+    }
 
     // Set profile information
     document.getElementById('profile-name').textContent = config.profile.name;
