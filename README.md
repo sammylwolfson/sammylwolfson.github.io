@@ -1,7 +1,7 @@
-# Connect – a totally free, no-server bio site for WordPress folks ✨
+# Connect – a totally free, no-server bio site for tech folks ✨
 
 Spin up a sleek "link-in-bio" page on **GitHub Pages** in minutes—no hosting bill, no complicated build chain.  
-Perfect for product owners, devs, and anyone in WP-land who wants a home base that just works.
+Perfect for product owners, devs, and anyone in tech who wants a home base that just works.
 
 ![Screenshot of my live site](screenshot-bright.png)
 
