@@ -7,7 +7,7 @@
   --button-text-color: #202124;
   --button-hover-bg-color: #FFC000;
   --button-hover-text-color: #202124;
-  --background-color: #202124;
+  --background-color: #070708;
   --border-color: #3C4043;
   --accent-color:  #FFC000;
 }
@@ -18,7 +18,19 @@ body {
 }
 
 .bio-container {
-  background: var(--background-color);
+  background: #111113;
+}
+
+.bio-container::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  bottom: -50px;
+  left: -50px;
+  background: radial-gradient(circle at center, rgba(98, 101, 64, 0.2) 0%, transparent 50%);
+  filter: blur(100px);
+  z-index: -1;
 }
 
 .profile-image {
@@ -66,7 +78,6 @@ h1 {
 }
 
 .bio p {
-  background-color: var(--background-color);
   border: 1px solid var(--border-color);
   border-radius: 4px; 
   padding: 1rem;
