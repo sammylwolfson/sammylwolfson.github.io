@@ -5,8 +5,6 @@ Perfect for product owners, devs, and anyone in tech who wants a home base that 
 
 ![Screenshot of my live site](screenshot-bright.png)
 
----
-
 ## Why you'll love it
 
 * **Zero cost, zero fuss** – GitHub Pages handles the hosting and SSL.  
@@ -16,8 +14,6 @@ Perfect for product owners, devs, and anyone in tech who wants a home base that 
 * **Fully responsive** – looks sharp on every device.  
 * **Custom domain ready** – add your own domain with a simple CNAME file.  
 * **MIT-licensed** – remix it, ship it, brag about it.
-
----
 
 ## Quick-start (3 steps)
 
@@ -55,7 +51,6 @@ Perfect for product owners, devs, and anyone in tech who wants a home base that 
 
 That's it—high-five! 🎉
 
----
 
 ## Theme Switcher – Make it yours
 
@@ -77,39 +72,31 @@ The "Theme Switcher" allows you to preview any theme via a query parameter in yo
 * **HTML changes** – everything lives in `index.html`. Keep it minimal or go wild.  
 * **Custom domain** – add a `CNAME` file with your domain name to use your own URL.
 
----
-
 ## Available Themes
 
 
 | Theme   | Description | Main Colors | Screenshot |
 |---------|-------------|-------------|------------|
-| **bulky** | Large, bold, soft, and modern. Features pill-shaped buttons, thick borders, and a playful, accessible look. | <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16'><rect width='16' height='16' fill='#a18aff'/></svg> `#a18aff` (button), <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16'><rect width='16' height='16' fill='#6c4cff'/></svg> `#6c4cff` (accent), <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16'><rect width='16' height='16' fill='#f5f2ef'/></svg> `#f5f2ef` (background), <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16'><rect width='16' height='16' fill='#18001a'/></svg> `#18001a` (border) | ![Preview of Bulky theme](screenshot-bulky.png)|
-| **kubrik** | Inspired by classic WordPress themes. Clean, blue-accented, with soft gradients and subtle shadows. | <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16'><rect width='16' height='16' fill='#21759b'/></svg> `#21759b` (blue), <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16'><rect width='16' height='16' fill='#60a6d2'/></svg> `#60a6d2` (light blue), <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16'><rect width='16' height='16' fill='#e9e9e9'/></svg> `#e9e9e9` (background) | ![Preview of Kubrik theme](screenshot-kubrik.png)|
-| **bright** | Vivid, modern, and energetic. Uses a blue/yellow/purple gradient background and crisp white cards. | <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16'><rect width='16' height='16' fill='#1a73e8'/></svg> `#1a73e8` (blue), <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16'><rect width='16' height='16' fill='#0d47a1'/></svg> `#0d47a1` (hover), <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16'><rect width='16' height='16' fill='#ffffff'/></svg> `#ffffff` (background) | ![Preview of Bright theme](screenshot-bright.png) |
-| **dark** | High-contrast, accessible dark mode. Gold/yellow accents on a deep black background. | <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16'><rect width='16' height='16' fill='#FFD700'/></svg> `#FFD700` (gold), <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16'><rect width='16' height='16' fill='#202124'/></svg> `#202124` (text), <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16'><rect width='16' height='16' fill='#070708'/></svg> `#070708` (background) | ![Preview of Dark theme](screenshot-dark.png) |
-| **minimal** | Ultra-simple, clean, and neutral. | <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16'><rect width='16' height='16' fill='#2d3748'/></svg> `#2d3748` (text), <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16'><rect width='16' height='16' fill='#f7fafc'/></svg> `#f7fafc` (background) | ![Preview of Minimal theme](screenshot-minimal.png) |
+| **bulky** | Large, bold, soft, and modern. Features pill-shaped buttons, thick borders, and a playful, accessible look. | <img valign='middle' alt='button' src='https://readme-swatches.vercel.app/a18aff'/> `#a18aff` (button)<br><img valign='middle' alt='accent' src='https://readme-swatches.vercel.app/6c4cff'/> `#6c4cff` (accent)<br><img valign='middle' alt='background' src='https://readme-swatches.vercel.app/f5f2ef'/> `#f5f2ef` (background)<br><img valign='middle' alt='border' src='https://readme-swatches.vercel.app/18001a'/> `#18001a` (border) | ![Preview of Bulky theme](screenshot-bulky.png)|
+| **kubrik** | Inspired by classic WordPress themes. Clean, blue-accented, with soft gradients and subtle shadows. | <img valign='middle' alt='blue' src='https://readme-swatches.vercel.app/21759b'/> `#21759b` (blue)<br><img valign='middle' alt='light blue' src='https://readme-swatches.vercel.app/60a6d2'/> `#60a6d2` (light blue)<br><img valign='middle' alt='background' src='https://readme-swatches.vercel.app/e9e9e9'/> `#e9e9e9` (background) | ![Preview of Kubrik theme](screenshot-kubrik.png)|
+| **bright** | Vivid, modern, and energetic. Uses a blue/yellow/purple gradient background and crisp white cards. | <img valign='middle' alt='blue' src='https://readme-swatches.vercel.app/1a73e8'/> `#1a73e8` (blue)<br><img valign='middle' alt='hover' src='https://readme-swatches.vercel.app/0d47a1'/> `#0d47a1` (hover)<br><img valign='middle' alt='background' src='https://readme-swatches.vercel.app/ffffff'/> `#ffffff` (background) | ![Preview of Bright theme](screenshot-bright.png) |
+| **dark** | High-contrast, accessible dark mode. Gold/yellow accents on a deep black background. | <img valign='middle' alt='gold' src='https://readme-swatches.vercel.app/FFD700'/> `#FFD700` (gold)<br><img valign='middle' alt='text' src='https://readme-swatches.vercel.app/202124'/> `#202124` (text)<br><img valign='middle' alt='background' src='https://readme-swatches.vercel.app/070708'/> `#070708` (background) | ![Preview of Dark theme](screenshot-dark.png) |
+| **minimal** | Ultra-simple, clean, and neutral. | <img valign='middle' alt='text' src='https://readme-swatches.vercel.app/2d3748'/> `#2d3748` (text)<br><img valign='middle' alt='background' src='https://readme-swatches.vercel.app/f7fafc'/> `#f7fafc` (background) | ![Preview of Minimal theme](screenshot-minimal.png) |
 
-> To add a screenshot, save a 1500×500px PNG as `screenshot-<theme>.png` in your repo root and update this table.
 
----
 
 ## Contribute
 
 Have a fresh style or nifty improvement?  
 PRs that enhance the stylesheet, improve performance, add new themes, or overall accessibility are always welcome.
 
----
 
 ## Feedback
 
 Questions, ideas, or you just deployed your own?  
 Open an issue or ping me on [X](https://x.com/learnwithmattc) — I'd love to see and share your Connect page with the world.
 
----
 
 ## License
 
 [MIT](LICENSE) – free to use, modify, and share.
-
-> **Note:** Replace `screenshot.png` with a real capture of **connect.mattcromwell.com** (1500×500 px works great).
