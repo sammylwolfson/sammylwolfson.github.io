@@ -1,4 +1,4 @@
-# Connect – a free bio site for WordPress folks ✨
+# Connect – a totally free, no-server bio site for WordPress folks ✨
 
 Spin up a sleek "link-in-bio" page on **GitHub Pages** in minutes—no hosting bill, no complicated build chain.  
 Perfect for product owners, devs, and anyone in WP-land who wants a home base that just works.
@@ -11,7 +11,6 @@ Perfect for product owners, devs, and anyone in WP-land who wants a home base th
 
 * **Zero cost, zero fuss** – GitHub Pages handles the hosting and SSL.  
 * **One JSON file, endless customisation** – update text, colours, and links without touching HTML.  
-* **Multiple themes** – choose from modern or minimal styles, or create your own.  
 * **Gravatar-ready** – your profile pic is always in sync.  
 * **Pulls in your latest blog posts** – drop an RSS feed in the config and you're done.  
 * **Fully responsive** – looks sharp on every device.  
@@ -47,8 +46,7 @@ Perfect for product owners, devs, and anyone in WP-land who wants a home base th
      "support": {
        "buttonText": "Buy me coffee ☕",
        "url": "https://buymeacoffee.com/you"
-     },
-     "theme": "modern"
+     }
    }
    ```
 3. **Enable GitHub Pages**  
@@ -61,9 +59,17 @@ That's it—high-five! 🎉
 
 ## Make it yours
 
-* **Choose a theme** – set `"theme": "modern"` or `"theme": "minimal"` in your config.  
-* **Create your own theme** – add a new CSS file in the `styles` directory and reference it in your config.  
-* **Stylesheet tweaks** – crack open any theme's CSS and add your brand flare.  
+* **Switching themes** – Themes are now loaded dynamically based on a URL query parameter. To preview or share your site with a different theme, just add `?theme=bulky`, `?theme=kubrik`, `?theme=bright`, or `?theme=dark` to your URL, for example:
+  
+  `https://<username>.github.io/?theme=bulky`
+  
+  If no `theme` parameter is present, or if the value is invalid, the **dark** theme will be loaded by default.
+  
+  To add a new theme, simply create a new CSS file in the `styles/` folder and add its name to the theme list in `main.js`.
+
+* **Cache-busting** – The theme and core stylesheets are automatically cache-busted on every load, so you and your visitors always get the latest version after you update your theme file.
+
+* **Stylesheet tweaks** – Edit your theme file in the `styles/` folder for colors and effects, or edit `core.css` for layout tweaks.  
 * **HTML changes** – everything lives in `index.html`. Keep it minimal or go wild.  
 * **Custom domain** – add a `CNAME` file with your domain name to use your own URL.
 

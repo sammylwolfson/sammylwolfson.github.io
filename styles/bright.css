@@ -1,90 +1,63 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Bright Theme: Only color, font, and visual style rules */
+:root {
+  --accent-color: #2b3f6d;
+  --link-color: #1a73e8;
+  --link-hover-color: #0d47a1;
+  --text-color: #202124;
+  --button-bg-color: #1a73e8;
+  --button-text-color: #ffffff;
+  --button-hover-bg-color: #0d47a1;
+  --button-hover-text-color: #ffffff;
+  --background-color: #ffffff;
+  --border-color: #dadce0;
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.6;
-    color: #2c3e50;
-    background: #f8f9fa;
+    color: var(--text-color);
+    background-color: #2b3f6d;
+    background-image: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%) !important;
 }
 
 .bio-container {
-    max-width: 680px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    min-height: 100vh;
-    background: linear-gradient(135deg, #ffffff 0%, #f5f7fa 100%);
+    background: #ffffff;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
-}
-
-.profile-header {
-    text-align: center;
-    padding: 1rem;
+    border-radius: 0.5rem;
 }
 
 .profile-image {
-    width: 128px;
-    height: 128px;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-    border: 3px solid #fff;
+    border: 3px solid var(--accent-color);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-    font-size: 2rem;
-    color: #1a73e8;
-    margin-bottom: 0.5rem;
+    color: var(--primary-color);
 }
 
 .tagline {
     color: #5f6368;
-    font-size: 1.1rem;
-    margin-bottom: 1.5rem;
 }
 
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
-}
-
-.social-icon {
-    width: 24px;
-    height: 24px;
+.social-icons a {
     color: #5f6368;
-    transition: color 0.2s ease, transform 0.2s ease;
 }
 
-.social-icon:hover {
-    color: #1a73e8;
+.social-icons a:hover {
+    color: var(--accent-color);
     transform: scale(1.1);
 }
 
-.link-section {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 0 1rem;
+.social-icon {
+    color: #5f6368;
+}
+
+.social-icon:hover {
+    color: var(--accent-color);
+    transform: scale(1.1);
 }
 
 .link-button {
     background: #fff;
-    color: #1a73e8;
-    padding: 1rem;
-    border-radius: 12px;
-    text-decoration: none;
-    text-align: center;
-    font-weight: 500;
-    transition: all 0.2s ease;
+    color: var(--accent-color);
     border: 2px solid #e8f0fe;
 }
 
@@ -95,63 +68,36 @@ h1 {
 }
 
 .bio {
-    padding: 1.5rem;
     background: #fff;
-    border-radius: 12px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     border: 2px solid #e8f0fe;
 }
 
-.blog-section {
-    padding: 1.5rem;
-}
-
 .blog-section h2 {
-    color: #1a73e8;
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
+    color: var(--accent-color);
 }
 
 .blog-post {
     background: #fff;
-    padding: 1.5rem;
-    border-radius: 12px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     border: 2px solid #e8f0fe;
 }
 
 .blog-post h3 {
     color: #202124;
-    margin-bottom: 0.5rem;
 }
 
 .read-more {
-    display: inline-block;
-    margin-top: 1rem;
-    color: #1a73e8;
-    text-decoration: none;
-    font-weight: 500;
+    color: var(--accent-color);
 }
 
 .read-more:hover {
     text-decoration: underline;
 }
 
-.footer {
-    text-align: center;
-    margin-top: auto;
-    padding: 1rem;
-}
-
 .support-button {
-    display: inline-block;
-    background: #1a73e8;
+    background: var(--accent-color);
     color: #fff;
-    padding: 0.8rem 1.5rem;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.2s ease;
 }
 
 .support-button:hover {
@@ -161,9 +107,6 @@ h1 {
 }
 
 @media (max-width: 768px) {
-    .bio-container {
-        padding: 1rem;
-    }
     
     .profile-image {
         width: 96px;
