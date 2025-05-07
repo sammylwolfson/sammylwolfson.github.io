@@ -19,7 +19,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    min-height: 100vh;
+    min-height: calc(100vh - 6rem);
     background: var(--background-color);
 }
 
@@ -53,6 +53,7 @@ h2 {
 
 .social-icons {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
     margin-top: 1rem;
@@ -144,7 +145,10 @@ h2 {
 
 @media (max-width: 768px) {
     .bio-container {
+        max-width: calc(100vw - 3rem);
+        margin: 1.5rem;
         padding: 1rem;
+        min-height: calc(100vh - 3rem);
     }
     
     .profile-image {
