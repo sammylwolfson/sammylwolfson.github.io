@@ -20,26 +20,24 @@
     theme = 'minimal'; // Fallback to minimal if config.json fails or theme is invalid
   }
   
-  const cacheBust = '?v=' + Math.random();
-  // Remove any existing theme link
-  const oldTheme = document.getElementById('theme-css');
-  if (oldTheme) oldTheme.remove();
-  // Create and append the new theme link
+  // Create and append the theme link immediately
   const link = document.createElement('link');
   link.rel = 'stylesheet';
-  link.href = `styles/${theme}.css${cacheBust}`;
+  link.href = `styles/${theme}.css`;
   link.id = 'theme-css';
   document.head.appendChild(link);
-})();
 
-// Cachebusting for CSS assets
-function addRandomCacheBuster(linkId) {
-    const link = document.getElementById(linkId);
-    if (!link) return;
-    const path = link.getAttribute('href').split('?')[0];
-    link.href = `${path}?v=${Math.random()}`;
-}
-addRandomCacheBuster('core-stylesheet');
+  // Preload other themes in the background
+  availableThemes.forEach(otherTheme => {
+    if (otherTheme !== theme) {
+      const preloadLink = document.createElement('link');
+      preloadLink.rel = 'preload';
+      preloadLink.href = `styles/${otherTheme}.css`;
+      preloadLink.as = 'style';
+      document.head.appendChild(preloadLink);
+    }
+  });
+})();
 
 // Load and apply configuration
 async function initializeContent() {
