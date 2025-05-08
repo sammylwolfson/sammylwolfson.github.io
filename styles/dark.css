@@ -18,7 +18,7 @@ body {
 }
 
 .bio-container {
-  background: #111113;
+  background: #1c1c1f;
 }
 
 .bio-container::before {
@@ -28,8 +28,8 @@ body {
   right: -50px;
   bottom: -50px;
   left: -50px;
-  background: radial-gradient(circle at center, rgba(98, 101, 64, 0.2) 0%, transparent 50%);
-  filter: blur(100px);
+  background: radial-gradient(circle at center, rgba(98, 101, 64) 0%, transparent 50%);
+  filter: blur(10px);
   z-index: -1;
 }
 
