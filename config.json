@@ -44,5 +44,6 @@
     "buttonText": "Contact Me ✉️",
     "url": "https://mattcromwell.com/contact"
   },
-  "theme": "dark"
+  "theme": "dark",
+  "gravatarHovercard": true
 } 
