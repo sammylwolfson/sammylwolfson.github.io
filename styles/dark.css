@@ -25,9 +25,9 @@ body {
   content: "";
   position: absolute;
   top: -50px;
-  right: -50px;
+  right: 0;
   bottom: -50px;
-  left: -50px;
+  left: 0;
   background: radial-gradient(circle at center, rgba(98, 101, 64) 0%, transparent 50%);
   filter: blur(10px);
   z-index: -1;
