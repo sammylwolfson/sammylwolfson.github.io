@@ -50,9 +50,15 @@ document.addEventListener('DOMContentLoaded', async () => {
       profileImage.src = `https://www.gravatar.com/avatar/${gravatarHash}?s=200`;
       if (config.gravatarHovercard) {
         profileImage.classList.add('hovercard');
-        if (window.Gravatar && typeof Gravatar.init === 'function') {
-          Gravatar.init();
-        }
+        // Dynamically load the hovercards script and initialize
+        const script = document.createElement('script');
+        script.src = 'https://www.gravatar.com/js/hovercards/hovercards.min.js';
+        script.onload = function() {
+          if (window.Gravatar && typeof Gravatar.init === 'function') {
+            Gravatar.init();
+          }
+        };
+        document.head.appendChild(script);
       } else {
         profileImage.classList.remove('hovercard');
       }
