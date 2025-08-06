@@ -1,17 +1,16 @@
 {
   "profile": {
     "name": "Sammy Wolfson",
-    "tagline": "",
-    "gravatarEmail": "matt@wpproducttalk.com",
-    "bio": "I'm Sammy Wolfson - a social media marketer, a Digital Manager at Live Nation, and founder of Wolfson Marketing. I craft strategies that drive engagement, growth, and measurable results. I'm passionate about volunteering, video games, cooking, and backpacking."
+    "tagline": "Digital Marketer",
+    "gravatarEmail": "sammywolfson@icloud.com",
+    "bio": "I'm Sammy Wolfson - a social media marketer and founder of Wolfson Marketing. I craft strategies that drive engagement, growth, and measurable results. I'm passionate about volunteering, music, video games and backpacking."
   },
   "social": {
+    "instagram": "https://www.instagram.com/sammylwolfson",
+    "facebook": "https://www.facebook.com/sammylwolfson",
     "linkedin": "https://www.linkedin.com/in/sammylwolfson/",
     "x": "https://x.com/sammylwolfson",
     "youtube": "https://www.youtube.com/@sammylwolfson",
-    "email": "https://mattcromwell.com/contact",
-    "instagram": "https://www.instagram.com/sammylwolfson",
-    "facebook": "https://www.facebook.com/sammylwolfson",
     "tiktok": "https://www.tiktok.com/@sammylwolfson",
     "discord": "https://discord.gg/Cnnjq6UXvU",
     "spotify": "https://open.spotify.com/user/123001102?si=76310c83f01b43d7"
@@ -32,7 +31,7 @@
   },
   "contact": {
     "buttonText": "Contact Me ✉️",
-    "url": "https://mattcromwell.com/contact"
+    "url": "emailto: sammywolfson@me.com"
   },
   "theme": "minimal",
   "gravatarHovercard": false
