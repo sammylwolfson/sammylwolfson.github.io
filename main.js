@@ -128,39 +128,59 @@ async function initializeContent() {
       linksGrid.appendChild(a);
     });
 
-    // Set support button
+    // Set support button (if it exists in config and DOM)
     const supportBtn = document.getElementById('support-button');
-    supportBtn.href = config.support.url;
-    supportBtn.textContent = config.support.buttonText;
-    supportBtn.ariaLabel = config.support.buttonText;
+    if (supportBtn && config.support && config.support.url && config.support.buttonText) {
+      supportBtn.href = config.support.url;
+      supportBtn.textContent = config.support.buttonText;
+      supportBtn.ariaLabel = config.support.buttonText;
+      supportBtn.style.display = '';
+    } else if (supportBtn) {
+      supportBtn.style.display = 'none';
+    }
 
     // Set contact button (footer) using config.contact only
     const contactBtn = document.getElementById('contact-button');
-    if (config.contact && config.contact.url && config.contact.buttonText) {
+    if (contactBtn && config.contact && config.contact.url && config.contact.buttonText) {
       contactBtn.href = config.contact.url;
       contactBtn.textContent = config.contact.buttonText;
       contactBtn.ariaLabel = config.contact.buttonText;
       contactBtn.style.display = '';
-    } else {
+    } else if (contactBtn) {
       contactBtn.style.display = 'none';
     }
 
     // Load blog post
     if (config.blog.rssFeed) {
       fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(config.blog.rssFeed)}`)
-        .then(response => response.json())
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+          return response.json();
+        })
         .then(data => {
-          const post = data.items[0];
-          document.querySelector('.post-content').innerHTML = `
-            <h3>${post.title}</h3>
-            <p>${post.description.split(' ').slice(0, config.blog.wordCount).join(' ')}...</p>
-            <a href="${post.link}" class="read-more" aria-label="Read more about ${post.title}">Read More →</a>
-          `;
+          if (data && data.items && data.items.length > 0) {
+            const post = data.items[0];
+            if (post.title && post.description && post.link) {
+              document.querySelector('.post-content').innerHTML = `
+                <h3>${post.title}</h3>
+                <p>${post.description.split(' ').slice(0, config.blog.wordCount).join(' ')}...</p>
+                <a href="${post.link}" class="read-more" aria-label="Read more about ${post.title}">Read More →</a>
+              `;
+            } else {
+              throw new Error('Invalid post data structure');
+            }
+          } else {
+            throw new Error('No blog posts found in RSS feed');
+          }
         })
         .catch(error => {
           console.error('Error fetching blog post:', error);
           document.querySelector('.post-content').innerHTML = `
-            <p>Visit my blog at <a href="${config.blog.rssFeed.split('/feed')[0]}" aria-label="Visit Marco Almeida's blog">blog.wonderm00n.com</a></p>
+            <h3>Check out my latest writing!</h3>
+            <p>I regularly share insights about digital marketing, social media strategies, and entrepreneurship. Visit my blog to read my latest thoughts and tips.</p>
+            <a href="${config.blog.rssFeed.split('/feed')[0]}" class="read-more" aria-label="Visit Sammy Wolfson's blog">Read my blog →</a>
           `;
         });
     } else {
