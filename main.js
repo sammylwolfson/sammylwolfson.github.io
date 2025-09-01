@@ -128,20 +128,25 @@ async function initializeContent() {
       linksGrid.appendChild(a);
     });
 
-    // Set support button
+    // Set support button (if it exists in config and DOM)
     const supportBtn = document.getElementById('support-button');
-    supportBtn.href = config.support.url;
-    supportBtn.textContent = config.support.buttonText;
-    supportBtn.ariaLabel = config.support.buttonText;
+    if (supportBtn && config.support && config.support.url && config.support.buttonText) {
+      supportBtn.href = config.support.url;
+      supportBtn.textContent = config.support.buttonText;
+      supportBtn.ariaLabel = config.support.buttonText;
+      supportBtn.style.display = '';
+    } else if (supportBtn) {
+      supportBtn.style.display = 'none';
+    }
 
     // Set contact button (footer) using config.contact only
     const contactBtn = document.getElementById('contact-button');
-    if (config.contact && config.contact.url && config.contact.buttonText) {
+    if (contactBtn && config.contact && config.contact.url && config.contact.buttonText) {
       contactBtn.href = config.contact.url;
       contactBtn.textContent = config.contact.buttonText;
       contactBtn.ariaLabel = config.contact.buttonText;
       contactBtn.style.display = '';
-    } else {
+    } else if (contactBtn) {
       contactBtn.style.display = 'none';
     }
 
@@ -160,7 +165,7 @@ async function initializeContent() {
         .catch(error => {
           console.error('Error fetching blog post:', error);
           document.querySelector('.post-content').innerHTML = `
-            <p>Visit my blog at <a href="${config.blog.rssFeed.split('/feed')[0]}" aria-label="Visit Marco Almeida's blog">blog.wonderm00n.com</a></p>
+            <p>Visit my blog at <a href="${config.blog.rssFeed.split('/feed')[0]}" aria-label="Visit Sammy Wolfson's blog">sammylwolfson.substack.com</a></p>
           `;
         });
     } else {
