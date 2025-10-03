@@ -80,13 +80,12 @@ async function initializeContent() {
     // Set meta description dynamically
     var metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute('content', config.profile.tagline || config.profile.bio || '');
+      metaDesc.setAttribute('content', config.profile.tagline || '');
     }
 
     // Set profile information
     document.getElementById('profile-name').textContent = config.profile.name;
     document.getElementById('profile-tagline').textContent = config.profile.tagline;
-    document.getElementById('bio-text').textContent = config.profile.bio;
 
     // Generate social icons
     const socialIcons = document.querySelector('.social-icons');
