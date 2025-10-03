@@ -2,7 +2,7 @@
   "profile": {
     "name": "Sammy Wolfson",
     "tagline": "Manager & Digital Marketer",
-    "gravatarEmail": "sammywolfson@icloud.com",
+    "gravatarEmail": "sammywolfson@icloud.com"
   },
   "social": {
     "instagram": "https://www.instagram.com/sammylwolfson",
@@ -29,7 +29,7 @@
   },
   "contact": {
     "buttonText": "Contact Me ✉️",
-    "url": "emailto: sammywolfson@me.com"
+    "url": "mailto:sammywolfson@me.com"
   },
   "theme": "minimal",
   "gravatarHovercard": false
