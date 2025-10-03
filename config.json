@@ -1,9 +1,8 @@
 {
   "profile": {
     "name": "Sammy Wolfson",
-    "tagline": "Digital Marketer",
+    "tagline": "Manager & Digital Marketer",
     "gravatarEmail": "sammywolfson@icloud.com",
-    "bio": "I'm Sammy Wolfson - a social media marketer and founder of Wolfson Marketing. I craft strategies that drive engagement, growth, and measurable results. I'm passionate about volunteering, music, video games and backpacking."
   },
   "social": {
     "instagram": "https://www.instagram.com/sammylwolfson",
@@ -16,14 +15,14 @@
   },
   "links": [
     {
-      "title": "Wolfson Marketing",
+      "title": "Wolfson Marketing Services",
       "url": "https://wolfsonmarketing.com/"
     },
     {
-      "title": "My Writing",
+      "title": "About Me",
       "url": "https://sammylwolfson.substack.com/"
     }
-  ],
+    ],
   "blog": {
     "rssFeed": "https://sammylwolfson.substack.com/feed",
     "wordCount": 75
