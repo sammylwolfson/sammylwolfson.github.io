@@ -1,1 +1,12 @@
 custom_server.py
+
+# Environment variables
+.env
+.env.*
+.env.local
+.env.production
+
+# Secrets
+*.pem
+*.key
+credentials.json
