@@ -22,6 +22,7 @@
       max-width: 100%;
       margin: 1.5rem auto 0;
     }
+    #gravatar-image { object-fit: cover; }
     .social-icon {
       width: 32px;
       height: 32px;
@@ -33,7 +34,7 @@
 <body>
   <main class="bio-container" role="main">
     <header class="profile-header" role="banner">
-      <img id="gravatar-image" src="https://www.gravatar.com/avatar/012c7fa3e82bc256495a607f51c89b8e5115a481e88201c2ffa931f97d6e20be?s=200" alt="Sammy Wolfson" width="128" height="128" />
+      <img id="gravatar-image" decoding="async" src="profile.svg" alt="Sammy Wolfson" width="128" height="128" />
       <h1>Sammy Wolfson</h1>
       <p class="tagline">Creator Manager</p>
       <nav class="social-icons" aria-label="Social media">
