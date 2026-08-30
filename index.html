@@ -3,135 +3,91 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Personal bio site for Sammy Wolfson" />
-  <title id="page-title">Loading...</title>
+  <meta name="description" content="Sammy Wolfson. Creator manager for comedians, musicians, models, and business owners — online and in the room." />
+  <title>Sammy Wolfson</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="styles/core.css" />
+  <link rel="stylesheet" href="styles/minimal.css" />
   <style>
-    /* Critical layout CSS */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+    .hub-copy {
+      max-width: 600px;
+      width: 100%;
+      margin: 0 auto;
+      color: #4a5568;
     }
-    
-    .bio-container {
-      max-width: 680px;
-      margin: 3rem auto;
-      padding: 2rem;
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-      min-height: calc(100vh - 6rem);
-    }
-    
-    .profile-header {
-      text-align: center;
-      padding: 1rem;
-    }
-    
-    header #gravatar-image {
-      width: 128px;
-      height: 128px;
-      border-radius: 50%;
+    .hub-copy p {
       margin-bottom: 1rem;
     }
-    
-    .social-icons {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-      margin-top: 1rem;
+    .hub-section {
+      max-width: 600px;
+      width: 100%;
+      margin: 0 auto 2rem;
+      text-align: left;
     }
-    
-    .links-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      justify-content: center;
+    .hub-section h2 {
+      font-size: 1.15rem;
+      margin-bottom: 0.5rem;
+      color: #1a202c;
     }
-    
+    .hub-section p, .hub-section li {
+      color: #4a5568;
+    }
     .link-button {
-      flex: 1 1 calc(33.333% - 1rem);
-      min-width: 200px;
-      max-width: 100%;
-      box-sizing: border-box;
-      text-align: center;
-    }
-    
-    @media (max-width: 768px) {
-      .bio-container {
-        max-width: calc(100vw - 3rem);
-        margin: 1.5rem;
-        padding: 1rem;
-        min-height: calc(100vh - 3rem);
-      }
-      
-      .profile-image {
-        width: 96px;
-        height: 96px;
-      }
-      
-      .links-grid {
-        flex-direction: column;
-      }
-      
-      .link-button {
-        flex: 1 1 100%;
-        min-width: 0;
-      }
+      display: block;
     }
   </style>
-  <link rel="preload" href="styles/core.css" as="style">
-  <link id="core-stylesheet" rel="stylesheet" href="styles/core.css" />
-  <!-- Theme stylesheet will be injected by main.js -->
-  <script src="crypto-js.min.js" defer></script>
-  <script src="main.js" defer></script>
-
 </head>
 <body>
   <main class="bio-container" role="main">
     <header class="profile-header" role="banner">
-      <img id="gravatar-image" alt="Profile picture of Matt Cromwell" class="hovercard" width="128" height="128" />
-      <h1 id="profile-name" aria-label="Name"></h1>
-      <p id="profile-tagline" class="tagline" aria-label="Tagline"></p>
-      <nav class="social-icons" aria-label="Social media links">
-        <!-- Social icons will be dynamically inserted here -->
+      <img id="gravatar-image" src="apple-touch-icon.png" alt="Sammy Wolfson" width="128" height="128" />
+      <h1>Sammy Wolfson</h1>
+      <p class="tagline">Creator manager for comedians, musicians, models, and business owners — online and in the room.</p>
+      <nav class="social-icons" aria-label="Social media">
+        <a href="https://www.instagram.com/sammylwolfson" aria-label="Instagram">
+          <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/sammylwolfson" aria-label="Facebook">
+          <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-3h2.5V9.5c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.5V12H17l-.4 3h-2.6v7A10 10 0 0 0 22 12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/sammylwolfson/" aria-label="LinkedIn">
+          <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+        <a href="https://x.com/sammylwolfson" aria-label="X">
+          <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="https://www.youtube.com/@sammylwolfson" aria-label="YouTube">
+          <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31.5 31.5 0 0 0 24 12a31.5 31.5 0 0 0-.5-5.8zM9.8 15.5v-7l6.2 3.5-6.2 3.5z"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/@sammylwolfson" aria-label="TikTok">
+          <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 8.2a6.9 6.9 0 0 1-4-1.3v7.2a6.5 6.5 0 1 1-5.6-6.4v3.2a3.3 3.3 0 1 0 2.3 3.1V2h3.1a6.9 6.9 0 0 0 4.2 3.9V8.2z"/></svg>
+        </a>
       </nav>
     </header>
 
-    <section id="link-section" class="link-section" aria-label="Quick links">
-      <h2>Links</h2>
-      <div class="links-grid"><!-- Links will be dynamically inserted here --></div>
+    <section class="hub-copy" aria-label="About">
+      <p>I help creators and business owners manage and grow their presence. Social, sites, and in-person events.</p>
+      <p>You make the work. I run the digital, and I show up when the job is in the room.</p>
     </section>
 
-    <section class="blog-section" aria-label="Latest blog post">
-      <h2>Latest from my Blog</h2>
-      <div class="blog-post">
-        <div class="post-content">
-          <!-- Latest blog post will be dynamically inserted here -->
-          <p>Loading latest post...</p>
-        </div>
+    <section class="link-section" aria-label="Work">
+      <h2>Work</h2>
+      <div class="links-grid">
+        <a class="link-button" href="https://wolfsonmarketing.com/">Wolfson Marketing</a>
+        <a class="link-button" href="https://wolfsonmarketing.com/free-strategy-call/">Book a strategy call</a>
+        <a class="link-button" href="https://sammylwolfson.substack.com/about">Writing</a>
       </div>
     </section>
 
+    <section class="hub-section" aria-label="Roster">
+      <h2>Roster</h2>
+      <p>Coming. No names here until they’re actually on it.</p>
+    </section>
+
+    <footer class="footer">
+      <a class="support-button" href="mailto:sammywolfson@me.com">Contact</a>
+    </footer>
   </main>
-  <script>
-  (function() {
-    function init() {
-      if (typeof Gravatar === 'undefined') {
-        return;
-      }
-      if (typeof Gravatar.init !== 'function') {
-        return;
-      }
-      Gravatar.init('body');
-    }
-    if (document.readyState !== 'loading') {
-      init();
-    } else {
-      document.addEventListener('DOMContentLoaded', init);
-    }
-  })();
-  </script>
 </body>
 </html>
